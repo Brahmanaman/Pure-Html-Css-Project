@@ -1,0 +1,133 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body{
+  line-height: 1.4;
+  font-weight: 300;
+  font-family: "Roboto", sans-serif;
+}
+
+
+.hero-section{
+  min-height: 100vh;
+  background-image: url(https://practice-project-html-css.vercel.app/Project%204/images/developer.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.text-container {
+  color: white;
+    padding-top: 64px;
+    max-width: 900px;
+    padding-left: 16px;
+    margin: 0 auto;
+}
+
+.lg_text{
+  font-size: 72px;
+  font-weight: 400;
+}
+
+.black_box{
+  background-color: black;
+  text-align: center;
+  padding: 24px;
+}
+
+.black_box h2{
+  font-size: 72px;
+    color: white;
+    font-weight: 300;
+}
+
+.black_box h2 span{
+  font-size: 96px;
+}
+
+.work{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 20px;
+      margin: 20px auto;
+    max-width: 1110px;
+    text-align: center;
+}
+
+.cards{
+  border-radius: 10px;
+  width: 320px;
+  height: 400px;
+  box-shadow: 3px 5px 5px rgb(1 1 1 / 20%);
+  transition: 0.2s ease-in-out;
+}
+.cards:hover{
+  transform: scale(1.04);
+  transition: 0.2s ease-in-out;
+}
+.grid-items{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card_content{
+  padding: 20px;
+}
+.bottom_section{
+  display: flex;
+}
+.contact_me{
+  background-color: #515603;
+}
+
+.about_me{
+  background-color: #722300;
+}
+
+.contact_me, .about_me{
+  color: white;
+  min-height: 300px;
+  padding: 32px;
+}
+.contact_me h2, .about_me h2{
+  font-size: 64px;
+  font-weight: 300;
+}
+.contact_me p, .about_me p{
+  margin-bottom: 20px;
+}
+
+footer{
+  background-color: black;
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 20px;
+}
+
+@media (max-width: 786px){
+  .hero-section{
+    max-height: 50vh;
+  }
+  .text-container{
+    padding: 10px 0;
+    text-align: center;
+  }
+  .lg_text{
+    font-size:32px;
+  }
+  .black_box h2{
+    font-size: 24px;
+  }
+  .black_box h2 span{
+    font-weight: 400;
+    font-size: 28px;
+  }
+  .bottom_section{
+    flex-direction: column;
+  }
+}
